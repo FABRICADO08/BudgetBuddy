@@ -1,6 +1,6 @@
 package com.budgetbuddy.controller;
 
-import com.budgetbuddy.entity.Transaction;
+import com.budgetbuddy.entity.Transaction; // Corrected import
 import com.budgetbuddy.entity.User;
 import com.budgetbuddy.repository.TransactionRepository;
 import lombok.RequiredArgsConstructor;

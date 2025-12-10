@@ -1,4 +1,4 @@
-package com.budgetbuddy.buddgetbuddy;
+package com.budgetbuddy.budgetbuddy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
