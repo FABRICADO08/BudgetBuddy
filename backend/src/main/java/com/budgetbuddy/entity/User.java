@@ -32,6 +32,10 @@ public class User implements UserDetails {
     @Enumerated(EnumType.STRING)
     private Role role;
 
+    // OAuth2 fields for social login
+    private String oauthProvider; // e.g., "google", "github"
+    private String oauthId; // Provider's unique user ID
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority(role.name()));
