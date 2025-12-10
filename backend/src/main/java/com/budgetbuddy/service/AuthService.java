@@ -1,11 +1,5 @@
 package com.budgetbuddy.service;
 
-import com.budgetbuddy.dto.AuthRequest;
-import com.budgetbuddy.dto.AuthResponse;
-import com.budgetbuddy.dto.RegisterRequest;
-import com.budgetbuddy.entity.Role;
-import com.budgetbuddy.entity.User;
-import com.budgetbuddy.repository.UserRepository;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
@@ -13,6 +7,13 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import com.budgetbuddy.dto.AuthRequest;
+import com.budgetbuddy.dto.AuthResponse;
+import com.budgetbuddy.dto.RegisterRequest;
+import com.budgetbuddy.entity.Role;
+import com.budgetbuddy.entity.User;
+import com.budgetbuddy.repository.UserRepository;
 
 @Service
 @RequiredArgsConstructor

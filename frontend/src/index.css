@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background-color: #f8fafc;
+@layer base {
+  body {
+    /* The EduMentor dark blue vibe */
+    @apply bg-[#0f172a] text-slate-100 antialiased;
+    background-image: 
+      radial-gradient(circle at 50% 0%, #1e40af 0%, transparent 40%),
+      radial-gradient(circle at 100% 0%, #0f172a 0%, transparent 50%);
+    background-attachment: fixed;
+  }
 }
+
+/* Glass Card Utility */
+.glass-card {
+  @apply bg-slate-800/40 backdrop-blur-xl border border-white/10 shadow-2xl;
+}
+
+/* The "EduMentor" Golden Button */
+.btn-gold {
+  @apply bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-300 hover:to-yellow-400 text-slate-900 font-bold shadow-lg shadow-amber-500/20 transition-all active:scale-95;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }

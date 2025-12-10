@@ -1,4 +1,4 @@
-package com.budgetbuddy.repository;
+package com.java.repository;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -18,11 +18,11 @@ public class Transaction {
     @Id
     @GeneratedValue
     private Integer id;
-    
+
     private BigDecimal amount;
     private String description;
     private LocalDate date;
-    
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     @JsonIgnore // Prevent infinite recursion in JSON

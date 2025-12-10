@@ -1,7 +1,9 @@
 package com.budgetbuddy.repository;
 
-import com.budgetbuddy.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.budgetbuddy.entity.User;
+
 import java.util.Optional;
 
 public interface UserRepository extends JpaRepository<User, Integer> {

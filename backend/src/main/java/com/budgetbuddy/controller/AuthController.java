@@ -1,14 +1,15 @@
 package com.budgetbuddy.controller;
 
-import com.budgetbuddy.dto.AuthRequest;
-import com.budgetbuddy.dto.AuthResponse;
-import com.budgetbuddy.dto.RegisterRequest;
-import com.budgetbuddy.service.AuthService;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import com.budgetbuddy.dto.AuthRequest;
+import com.budgetbuddy.dto.AuthResponse;
+import com.budgetbuddy.dto.RegisterRequest;
+import com.budgetbuddy.service.AuthService;
 
 @RestController
 @RequestMapping("/api/v1/auth")
