@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import api from '../api/axiosConfig';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/NavBar';
 import { TrendingUp, TrendingDown, DollarSign, Calendar, Search, Filter } from 'lucide-react';
 
 interface Transaction {

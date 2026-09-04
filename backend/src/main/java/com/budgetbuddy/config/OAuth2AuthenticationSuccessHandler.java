@@ -28,7 +28,7 @@ public class OAuth2AuthenticationSuccessHandler implements AuthenticationSuccess
 
         // Redirect to frontend with token in URL query parameter
         String redirectUrl = String.format(
-                "http://localhost:3000/?accessToken=%s&userId=%s&email=%s&firstname=%s&lastname=%s",
+                "http://localhost:5173/?accessToken=%s&userId=%s&email=%s&firstname=%s&lastname=%s",
                 token, userId, email, firstname, lastname);
 
         response.sendRedirect(redirectUrl);

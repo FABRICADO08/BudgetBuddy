@@ -8,6 +8,6 @@ import com.budgetbuddy.entity.Transaction;
 import java.util.List;
 
 @Repository
-public interface TransactionRepository extends JpaRepository<Transaction, Long> {
+public interface TransactionRepository extends JpaRepository<Transaction, Integer> {
     List<Transaction> findAllByUserId(Integer userId);
 }
