@@ -1,0 +1,11 @@
+{
+  "name": "budgetbuddy",
+  "compatibility_date": "2026-09-04",
+  "build": {
+    "command": "npm run build --prefix frontend"
+  },
+  "assets": {
+    "directory": "./frontend/dist",
+    "not_found_handling": "single-page-application"
+  }
+}
