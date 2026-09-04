@@ -69,7 +69,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.budgetbuddy.budgetbuddy.BudgetBuddyApplication</mainClass> 
+                    <mainClass>com.budgetbuddy.BudgetBuddyApplication</mainClass>
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>

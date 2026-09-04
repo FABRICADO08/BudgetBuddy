@@ -3,7 +3,6 @@ package com.budgetbuddy.service;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -80,7 +79,17 @@ public class JwtService {
     }
 
     private Key getSignInKey() {
-        byte[] keyBytes = Decoders.BASE64.decode(secretKey);
+        byte[] keyBytes = hexStringToByteArray(secretKey);
         return Keys.hmacShaKeyFor(keyBytes);
+    }
+
+    private byte[] hexStringToByteArray(String hex) {
+        int length = hex.length();
+        byte[] bytes = new byte[length / 2];
+        for (int i = 0; i < length; i += 2) {
+            bytes[i / 2] = (byte) ((Character.digit(hex.charAt(i), 16) << 4)
+                    + Character.digit(hex.charAt(i + 1), 16));
+        }
+        return bytes;
     }
 }

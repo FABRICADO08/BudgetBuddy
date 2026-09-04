@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Sep 04 12:43:09 UTC 2026
+https\://repo.maven.apache.org/maven2/.lastUpdated=1788525789617
+http\://0.0.0.0/.error=Could not transfer artifact com.nimbusds\:content-type\:pom\:2.2 from/to maven-default-http-blocker (http\://0.0.0.0/)\: Blocked mirror for repositories\: [central (http\://repo1.maven.org/maven2, default, releases+snapshots)]
+@default-maven-default-http-blocker-http\://0.0.0.0/.lastUpdated=1788525789583
